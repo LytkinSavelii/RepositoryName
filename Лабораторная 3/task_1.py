@@ -4,9 +4,11 @@ class Book:
         self._name = name
         self._author = author
 
+    @property
     def name(self) -> str:
         return self._name
 
+    @property
     def author(self) -> str:
         return self._author
 
@@ -22,9 +24,11 @@ class PaperBook:
         super().__init__(name, author)
         self.pages = pages
 
+        @property
         def pages(self) -> int:
             return self._pages
 
+        @pages.setter
         def pages(self, new_pages: int) -> None:
             if not isinstance(new_pages, int):
                 raise TypeError("Количество страниц должно быть задано числом")
@@ -44,8 +48,11 @@ class AudioBook:
     def __init__(self, name: str, author: str, duration: float):
         super().__init__(name, author)
         self.duration = duration
+
+    @property
     def duration(self) -> float:
         return self._duration
+    @duration.setter
     def duration(self, new_duration: float) -> None:
         if not isinstance(new_duration, float):
             raise TypeError("Продолжительность книги должна быть задана числом")
