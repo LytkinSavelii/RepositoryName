@@ -1,6 +1,6 @@
 if __name__ == "__main__":
     # Write your solution here
-    class Sportsmen:
+    class Sportsmen: # Класс выдаёт вес и размах рук спортсмена
         def __init__(self, reach: float, weight: float):
             self.reach = reach
             self.weight = weight
@@ -35,7 +35,7 @@ if __name__ == "__main__":
             return f"{self.__class__.__name__}(reach={self.reach}, weight={self.weight})"
 
 
-    class Cruiserweighter(Sportsmen):
+    class Cruiserweighter(Sportsmen): # Класс выдаёт возраст и национальность спортсмена
         def __init__(self, age: int, nation: str):
 
             self.age = age
