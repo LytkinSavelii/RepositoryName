@@ -1,4 +1,4 @@
-# TODO Написать 3 класса с документацией и аннотацией типов
+
 import doctest
 
 class Animal:
